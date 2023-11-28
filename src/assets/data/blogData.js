@@ -9,6 +9,7 @@ const blogData = [
     title: "The best way to drive cars",
     author: "Muhib",
     date: "12 Dec, 2020",
+    
     time: "9pm",
     imgUrl: img01,
     description:
