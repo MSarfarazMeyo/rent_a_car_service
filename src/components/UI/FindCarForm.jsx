@@ -2,12 +2,15 @@ import React from "react";
 import "../../styles/find-car-form.css";
 import "../../styles/find-car-form.css";
 import { Form, FormGroup } from "reactstrap";
+import carData from "../../assets/data/carData";
 
 const FindCarForm = () => {
+
+  
   return (
     <Form className="form">
       <div className=" d-flex align-items-center justify-content-between flex-wrap">
-        <FormGroup className="form__group">
+        {/* <FormGroup className="form__group">
           <input type="text" placeholder="From address" required />
         </FormGroup>
 
@@ -26,11 +29,17 @@ const FindCarForm = () => {
             placeholder="Journey time"
             required
           />
-        </FormGroup>
+        </FormGroup> */}
         <FormGroup className="select__group">
           <select>
-            <option value="ac">AC Car</option>
-            <option value="non-ac">Non AC Car</option>
+            {
+              carData.map((item)=>{
+
+                return  <option value="ac">{item.carName}</option>
+           
+              })
+            }
+            <option value="non-ac">Select A Car</option>
           </select>
         </FormGroup>
 

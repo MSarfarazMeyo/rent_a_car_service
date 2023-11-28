@@ -32,7 +32,7 @@ const Contact = () => {
       <section>
         <Container>
           <Row>
-            <Col lg="7" md="7">
+            <Col lg="6" md="6">
               <h6 className="fw-bold mb-4">Get In Touch</h6>
 
               <Form>
@@ -56,14 +56,19 @@ const Contact = () => {
               </Form>
             </Col>
 
-            <Col lg="5" md="5">
+            <Col lg="6" md="6" >
               <div className="contact__info">
-                <h6 className="fw-bold">Contact Information</h6>
+                <h6 className="fw-bold center">Contact Information</h6>
                 <p className="section__description mb-0">
                   123 ZindaBazar, Islamabad, Pakistan
                 </p>
                 <div className=" d-flex align-items-center gap-2">
                   <h6 className="fs-6 mb-0">Phone:</h6>
+                  <p className="section__description mb-0">+923683896366</p>
+                </div>
+
+                <div className=" d-flex align-items-center gap-2">
+                  <h6 className="fs-6 mb-0">WhatsApp:</h6>
                   <p className="section__description mb-0">+923683896366</p>
                 </div>
 
