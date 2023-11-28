@@ -51,10 +51,10 @@ const Footer = () => {
             </div>
           </Col>
 
-          <Col lg="6" md="6" sm="12">
+          <Col lg="6" md="6" sm="12" style={{minWidth:"200px" , minHeight:"200px"}}>
         
           <SimpleMap/>
-         
+        
           </Col>
 
           <Col lg="12">
